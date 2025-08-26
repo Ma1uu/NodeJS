@@ -5,6 +5,7 @@ const app = express();
 // Configurações
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'nav-node.js', 'views'));
+console.log("Views dir:", path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
